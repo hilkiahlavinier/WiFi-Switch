@@ -1,0 +1,282 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FE89967F14FD713B00725843 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE89967E14FD713B00725843 /* UIKit.framework */; };
+		FE89968114FD713B00725843 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE89968014FD713B00725843 /* Foundation.framework */; };
+		FE89968314FD713B00725843 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE89968214FD713B00725843 /* CoreGraphics.framework */; };
+		FE89968914FD713B00725843 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FE89968714FD713B00725843 /* InfoPlist.strings */; };
+		FE89968B14FD713B00725843 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FE89968A14FD713B00725843 /* main.m */; };
+		FE89968F14FD713B00725843 /* HDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FE89968E14FD713B00725843 /* HDAppDelegate.m */; };
+		FE89969214FD713B00725843 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE89969014FD713B00725843 /* MainStoryboard.storyboard */; };
+		FE89969514FD713B00725843 /* HDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE89969414FD713B00725843 /* HDViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FE89967A14FD713B00725843 /* WiFi-Switch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WiFi-Switch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE89967E14FD713B00725843 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FE89968014FD713B00725843 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FE89968214FD713B00725843 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FE89968614FD713B00725843 /* WiFi-Switch-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WiFi-Switch-Info.plist"; sourceTree = "<group>"; };
+		FE89968814FD713B00725843 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FE89968A14FD713B00725843 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FE89968C14FD713B00725843 /* WiFi-Switch-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WiFi-Switch-Prefix.pch"; sourceTree = "<group>"; };
+		FE89968D14FD713B00725843 /* HDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDAppDelegate.h; sourceTree = "<group>"; };
+		FE89968E14FD713B00725843 /* HDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDAppDelegate.m; sourceTree = "<group>"; };
+		FE89969114FD713B00725843 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		FE89969314FD713B00725843 /* HDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDViewController.h; sourceTree = "<group>"; };
+		FE89969414FD713B00725843 /* HDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FE89967714FD713B00725843 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE89967F14FD713B00725843 /* UIKit.framework in Frameworks */,
+				FE89968114FD713B00725843 /* Foundation.framework in Frameworks */,
+				FE89968314FD713B00725843 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FE89966F14FD713A00725843 = {
+			isa = PBXGroup;
+			children = (
+				FE89968414FD713B00725843 /* WiFi-Switch */,
+				FE89967D14FD713B00725843 /* Frameworks */,
+				FE89967B14FD713B00725843 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FE89967B14FD713B00725843 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FE89967A14FD713B00725843 /* WiFi-Switch.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FE89967D14FD713B00725843 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FE89967E14FD713B00725843 /* UIKit.framework */,
+				FE89968014FD713B00725843 /* Foundation.framework */,
+				FE89968214FD713B00725843 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FE89968414FD713B00725843 /* WiFi-Switch */ = {
+			isa = PBXGroup;
+			children = (
+				FE89968D14FD713B00725843 /* HDAppDelegate.h */,
+				FE89968E14FD713B00725843 /* HDAppDelegate.m */,
+				FE89969014FD713B00725843 /* MainStoryboard.storyboard */,
+				FE89969314FD713B00725843 /* HDViewController.h */,
+				FE89969414FD713B00725843 /* HDViewController.m */,
+				FE89968514FD713B00725843 /* Supporting Files */,
+			);
+			path = "WiFi-Switch";
+			sourceTree = "<group>";
+		};
+		FE89968514FD713B00725843 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FE89968614FD713B00725843 /* WiFi-Switch-Info.plist */,
+				FE89968714FD713B00725843 /* InfoPlist.strings */,
+				FE89968A14FD713B00725843 /* main.m */,
+				FE89968C14FD713B00725843 /* WiFi-Switch-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FE89967914FD713B00725843 /* WiFi-Switch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE89969814FD713B00725843 /* Build configuration list for PBXNativeTarget "WiFi-Switch" */;
+			buildPhases = (
+				FE89967614FD713B00725843 /* Sources */,
+				FE89967714FD713B00725843 /* Frameworks */,
+				FE89967814FD713B00725843 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WiFi-Switch";
+			productName = "WiFi-Switch";
+			productReference = FE89967A14FD713B00725843 /* WiFi-Switch.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FE89967114FD713A00725843 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = HD;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = FE89967414FD713A00725843 /* Build configuration list for PBXProject "WiFi-Switch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FE89966F14FD713A00725843;
+			productRefGroup = FE89967B14FD713B00725843 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FE89967914FD713B00725843 /* WiFi-Switch */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FE89967814FD713B00725843 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE89968914FD713B00725843 /* InfoPlist.strings in Resources */,
+				FE89969214FD713B00725843 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FE89967614FD713B00725843 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE89968B14FD713B00725843 /* main.m in Sources */,
+				FE89968F14FD713B00725843 /* HDAppDelegate.m in Sources */,
+				FE89969514FD713B00725843 /* HDViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FE89968714FD713B00725843 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE89968814FD713B00725843 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FE89969014FD713B00725843 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE89969114FD713B00725843 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FE89969614FD713B00725843 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FE89969714FD713B00725843 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FE89969914FD713B00725843 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WiFi-Switch/WiFi-Switch-Prefix.pch";
+				INFOPLIST_FILE = "WiFi-Switch/WiFi-Switch-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FE89969A14FD713B00725843 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WiFi-Switch/WiFi-Switch-Prefix.pch";
+				INFOPLIST_FILE = "WiFi-Switch/WiFi-Switch-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FE89967414FD713A00725843 /* Build configuration list for PBXProject "WiFi-Switch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE89969614FD713B00725843 /* Debug */,
+				FE89969714FD713B00725843 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE89969814FD713B00725843 /* Build configuration list for PBXNativeTarget "WiFi-Switch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE89969914FD713B00725843 /* Debug */,
+				FE89969A14FD713B00725843 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FE89967114FD713A00725843 /* Project object */;
+}
