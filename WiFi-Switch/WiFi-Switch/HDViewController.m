@@ -14,6 +14,17 @@
 
 @implementation HDViewController
 
+@synthesize label;
+
+-(IBAction)pushBTN:(id)sender{
+    if([label.text isEqualToString:@"WIFI Switch On"])
+        label.text = @"WIFI Switch Off";
+    else
+        label.text = @"WIFI Switch On";
+}
+
+
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
