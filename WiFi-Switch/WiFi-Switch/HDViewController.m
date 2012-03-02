@@ -17,9 +17,37 @@
 @synthesize label;
 
 -(IBAction)pushBTN:(id)sender{
-    if([label.text isEqualToString:@"WIFI Switch On"])
+    NSLog(@"Button pushed ..");
+    if([label.text isEqualToString:@"WIFI Switch On"]) {
+        NSLog(@"Switch off ...");
         label.text = @"WIFI Switch Off";
-    else
+        //NEED TO STORE THE STATUS IN PLIST ... 
+        //WOUD LIKE TO DISPLAY ICON STATUS AS WELL ... 
+        
+        #if TARGET_IPHONE_SIMULATOR
+                //exit( EXIT_SUCCESS ) ;
+        #else
+                /* this works in iOS 4.2.3 */
+                Class BluetoothManager = objc_getClass( "BluetoothManager" ) ;
+                id btCont = [BluetoothManager sharedInstance] ;
+                [self performSelector:@selector(toggle:) withObject:btCont afterDelay:0.1f] ;
+        #endif
+                //return YES ;
+                
+                
+        #if TARGET_IPHONE_SIMULATOR
+        #else
+                - (void)toggle:(id)btCont
+                {
+                    BOOL currentState = [btCont enabled] ;
+                    [btCont setEnabled:!currentState] ;
+                    [btCont setPowered:!currentState] ;
+                    exit( EXIT_SUCCESS ) ;
+                }
+        #endif
+
+    } else if ([label.text isEqualToString:@"WIFI Switch Off"]) {
+        NSLog(@"Switch on ...");
         label.text = @"WIFI Switch On";
         //NEED TO STORE THE STATUS IN PLIST ... 
         //WOUD LIKE TO DISPLAY ICON STATUS AS WELL ... 
@@ -32,20 +60,23 @@
                 id btCont = [BluetoothManager sharedInstance] ;
                 [self performSelector:@selector(toggle:) withObject:btCont afterDelay:0.1f] ;
         #endif
-                return YES ;
-
-            
+                //return YES ;
+                
+                
         #if TARGET_IPHONE_SIMULATOR
         #else
-            - (void)toggle:(id)btCont
-            {
-                BOOL currentState = [btCont enabled] ;
-                [btCont setEnabled:!currentState] ;
-                [btCont setPowered:!currentState] ;
-                exit( EXIT_SUCCESS ) ;
-            }
+                - (void)toggle:(id)btCont
+                {
+                    BOOL currentState = [btCont enabled] ;
+                    [btCont setEnabled:!currentState] ;
+                    [btCont setPowered:!currentState] ;
+                    exit( EXIT_SUCCESS ) ;
+                }
         #endif
-}
+
+    }
+    
+    }
 
 
 
