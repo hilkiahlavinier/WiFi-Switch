@@ -25,14 +25,17 @@
         //WOUD LIKE TO DISPLAY ICON STATUS AS WELL ... 
         
         #if TARGET_IPHONE_SIMULATOR
-                //exit( EXIT_SUCCESS ) ;
+                NSLog(@"Exiting ...");
+                exit( EXIT_SUCCESS ) ;
         #else
                 /* this works in iOS 4.2.3 */
+                NSLog(@"Iphone 4.2.3..."); 
                 Class BluetoothManager = objc_getClass( "BluetoothManager" ) ;
                 id btCont = [BluetoothManager sharedInstance] ;
                 [self performSelector:@selector(toggle:) withObject:btCont afterDelay:0.1f] ;
         #endif
                 //return YES ;
+        NSLog(@"Exiting...");
                 
                 
         #if TARGET_IPHONE_SIMULATOR
