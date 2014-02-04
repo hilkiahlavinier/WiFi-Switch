@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HDViewController : UIViewController
+@interface HDViewController : UIViewController {
+    IBOutlet UILabel *label;
+}
 
+@property (nonatomic, retain)IBOutlet UILabel *label;
+- (IBAction)pushBTN;
 @end
